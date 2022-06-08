@@ -26,13 +26,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Jane Doe | Web Developer</title>
+    <title>Alex Ochs | Student</title>
   </head>
 
   <body>
     <!-- Navbar -->
     <nav>
-      <h1>JANE DOE</h1>
+      <h1>ALEX OCHS</h1>
       <ul class="navigation">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -45,18 +45,230 @@
     </nav>
 
     <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="assets/images/me-at-canyon.jpg"
+        alt="Alex Ochs"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          Hey! Im currently an Electrical Engineering student at UW-Madsion  
+          heading in to my junior year. My professional passions revolve around
+          enviromental sustainability and humanitarian improvements, with my experience
+          predominately in the Electric Vehicle space.
+        </p>
+      </div>
+    </section>
 
     <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        I was first introduced to engineering as a field when I started as an industrial
+        automation technician at a local factory near my hometown in Wisconsin. I became fascinated
+        with the equipment I was working on and wanted to contribute, so I decided to go to school in the hopes
+        of becoming a controls engineer.
+      </p>
+      <p>
+        At the start of 2021, I joined Tesla on an internship to do controls engineering and
+        factory software for the Global High Voltage Battery Manufacturing Engineering Launch Team. My work
+        on high speed continous motion machinery, data collection, and data analytics helped launch the world's
+        fastest production car (Model S Plaid) in record time during an unprecedented supply chain crisis. 
+      </p>
+      <p>
+        My work with the launch team helped my find my interest in leveraging software and automation to solve
+        complex problems. To grow this interest, I joined the Firmware Validation team at Tesla within the Vehicle
+        Software Organization. I worked primarily in python to develop ECU simulations and data pipelines to ensure
+        Tesla's batteries continue to be world leaders. 
+      </p>
+      <p>
+        I am constantly learning and breaking things in my spare time. Feel free to check out some of these
+        personal projects below. If you and your team are working on hard projects
+        that will make the world a better, cleaner place to live, I would love to join you!
+      </p>
+    </section>
 
     <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-car-48.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-factory-50.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-python-48.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-solidworks-48.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
 
     <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/expenseTracker.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Expense Tracker</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/netflixClone.png"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Netflix Clone</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/greenyEarth.png"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Greeny Earth</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylnggw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- Social accounts - Fixed to the right -->
-
-    <!-- Footer section -->
+    <div class="socials">
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-twitter-circled.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
